@@ -1,0 +1,282 @@
+[
+  {
+    "title": "Dansande norrsken",
+    "info": {
+      "description": "Norrsken som dansar på himmlen i Michigan, Amerika",
+      "price": 55,
+      "size": 45,
+      "size1": 75
+    },
+    "class": "popup-img",
+    "url": "https://images.unsplash.com/photo-1618767438211-11ffdb8e1861?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+    "alt": "Norrsken i Michigan, Amerika",
+    "id": "prodA",
+    "inCart": 0
+  },
+  {
+    "title": "Tripp igenom höstig skog",
+    "info": {
+      "description": "Bild tagen över en bilväg som skär igenom en höstig skog",
+      "price": 75,
+      "size": 40,
+      "size1": 65
+    },
+    "class": "popup-img",
+    "url": "https://images.unsplash.com/photo-1633248611990-ed00611b7c97?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+    "alt": "Bilväg igenom höstig skog",
+    "id": "prodB",
+    "inCart": 0
+  },
+  {
+    "title": "Nostalgi tripp",
+    "info": {
+      "description": "Street Fighter 2 ute i ingenstans",
+      "price": 115,
+      "size": 75,
+      "size1": 90
+    },
+    "class": "popup-img",
+    "url": "https://images.unsplash.com/photo-1635701248071-ed01d3622db3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=924&q=80",
+    "alt": "Street Fighter 2 ute i ingenstans",
+    "id": "prodC",
+    "inCart": 0
+  },
+  {
+    "title": "Åskstorm långt borta",
+    "info": {
+      "description": "Åskstorm i Sun Prairie, WI, USA. Molnen lyses upp av blixtarna i fjärran",
+      "price": 55,
+      "size": 50,
+      "size1": 70
+    },
+    "class": "popup-img",
+    "url": "https://images.unsplash.com/photo-1636517223759-e70b0069b26a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+    "alt": "Åskstorm i Sun Prairie, WI, USA",
+    "id": "prodD",
+    "inCart": 0
+  },
+  {
+    "title": "Vattenfall",
+    "info": {
+      "description": "Bild tagen på ett vattenfall i Island.",
+      "price": 70,
+      "size": 35,
+      "size1": 50
+    },
+    "class": "popup-img",
+    "url": "https://images.unsplash.com/photo-1637194990166-a8e87209f751?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80",
+    "alt": "Vattenfall i Island",
+    "id": "prodE",
+    "inCart": 0
+  },
+  {
+    "title": "Välkommen höst",
+    "info": {
+      "description": "Höstig lövhög med härliga oranga, röda och bruna färger",
+      "price": 45,
+      "size": 40,
+      "size1": 25
+    },
+    "class": "popup-img",
+    "url": "https://images.unsplash.com/photo-1637162330294-28cc8540d41d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80",
+    "alt": "Höstig lövhög",
+    "id": "prodF",
+    "inCart": 0
+  },
+  {
+    "title": "De fyra pelarna",
+    "info": {
+      "description": "Närbild på fyra pelar som håller upp ett colosseum",
+      "price": 75,
+      "size": 50,
+      "size1": 80
+    },
+    "class": "popup-img",
+    "url": "https://images.unsplash.com/photo-1637717648706-86040bb7dfbc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDJ8eEh4WVRNSExnT2N8fGVufDB8fHx8&auto=format&fit=crop&w=900&q=60",
+    "alt": "Närbild på colosseum",
+    "id": "prodG",
+    "inCart": 0
+  },
+  {
+    "title": "Frusen i tid",
+    "info": {
+      "description": "Snötäckt berg med skog och sjö. Bilden frusen i tid som påminner om när istiden smälte och naturen började sprida ut sig",
+      "price": 95,
+      "size": 80,
+      "size1": 110
+    },
+    "class": "popup-img",
+    "url": "https://images.unsplash.com/photo-1637102839226-e6b3402a9a0a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80",
+    "alt": "Berg med skog och snötäckt sjö",
+    "id": "prodH",
+    "inCart": 0
+  },
+  {
+    "title": "Burg Eltz, Wierschem.",
+    "info": {
+      "description": "Spöklig bild av Burg Eltz, Wierschem i Tyskland",
+      "price": 120,
+      "size": 85,
+      "size1": 50
+    },
+    "class": "popup-img",
+    "url": "https://images.unsplash.com/photo-1636725691774-e9c7cfb150ab?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80",
+    "alt": "Burg Eltz, Wierschem, Tyskland",
+    "id": "prodI",
+    "inCart": 0
+  },
+  {
+    "title": "Al Aqsa, Jerusalem, Israel",
+    "info": {
+      "description": "Bakom blommorna ligger Al Aqsa Moské i solskenet. Dekorera ditt hem med denna vackra bild",
+      "price": 50,
+      "size": 35,
+      "size1": 45
+    },
+    "class": "popup-img",
+    "url": "https://images.unsplash.com/photo-1542317803-0fc679478393?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80",
+    "alt": "Al Aqsa, Jerusalem, Israel",
+    "id": "prodJ",
+    "inCart": 0
+  },
+  {
+    "title": "Kinesiska muren",
+    "info": {
+      "description": "Bild på kinesiska muren i gråskala. Överväxt med naturen och muren som förfaller",
+      "price": 115,
+      "size": 100,
+      "size1": 120
+    },
+    "class": "popup-img",
+    "url": "https://images.unsplash.com/photo-1633550391236-add8f543486c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80",
+    "alt": "Kinesiska muren",
+    "id": "prodK",
+    "inCart": 0
+  },
+  {
+    "title": "Colosseum",
+    "info": {
+      "description": "Förfallna men bevarade colosseum i Rom. Colosseum i Rom, Italien",
+      "price": 90,
+      "size": 75,
+      "size1": 100
+    },
+    "class": "popup-img",
+    "url": "https://images.unsplash.com/photo-1573401491223-8b54e0f9926b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+    "alt": "Colosseum i Rom, Italien",
+    "id": "prodL",
+    "inCart": 0
+  },
+  {
+    "title": "Retro cykel",
+    "info": {
+      "description": "Ta dig tillbaka i tiden med denna cykel. Retro cykel i fokus med gråskala färger",
+      "price": 85,
+      "size": 65,
+      "size1": 80
+    },
+    "class": "popup-img",
+    "url": "https://images.unsplash.com/photo-1630838700819-4d84b1f0a374?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80",
+    "alt": "Retro cykel i fokus med gråskala färger",
+    "id": "prodM",
+    "inCart": 0
+  },
+  {
+    "title": "Höstdag",
+    "info": {
+      "description": "Höstdag i Vosges skogar, Frankrike. Sprid höst i ditt hem med denna bild i härliga höst färgerna orange, rött och brunt",
+      "price": 50,
+      "size": 30,
+      "size1": 40
+    },
+    "class": "popup-img",
+    "url": "https://images.unsplash.com/photo-1634486662298-ac78754e9b74?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80",
+    "alt": "Höstdag i Vosges, Frankrike",
+    "id": "prodN",
+    "inCart": 0
+  },
+  {
+    "title": "Eiffeltornet",
+    "info": {
+      "description": "Bild på eiffeltornet en dimmig dag. Nertonade färger och fokusering på eiffeltornets struktur",
+      "price": 100,
+      "size": 55,
+      "size1": 80
+    },
+    "class": "popup-img",
+    "url": "https://images.unsplash.com/photo-1628326036318-9af1614d6584?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+    "alt": "Eiffeltornet",
+    "id": "prodO",
+    "inCart": 0
+  },
+  {
+    "title": "Portal till en ny värld",
+    "info": {
+      "description": "Portal till en ny värld bortom det du vet nu. Vad finns bakom denna portal? Bara du vet det svaret. Bara du har makten att styra och bestämma",
+      "price": 80,
+      "size": 50,
+      "size1": 65
+    },
+    "class": "popup-img",
+    "url": "https://images.unsplash.com/photo-1583248720918-a7054c5b8ea8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80",
+    "alt": "Kyrkofönster",
+    "id": "prodP",
+    "inCart": 0
+  },
+  {
+    "title": "Reflektion",
+    "info": {
+      "description": "På stilla vatten reser sig en lotus blomma själv och sträcker sig mot solen. Dekorera din vägg med denna vackra lotus bild",
+      "price": 75,
+      "size": 70,
+      "size1": 50
+    },
+    "class": "popup-img",
+    "url": "https://images.unsplash.com/photo-1636950101519-a128cad64a4b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80",
+    "alt": "Lotus blomma på stilla vatten",
+    "id": "prodQ",
+    "inCart": 0
+  },
+  {
+    "title": "Magisk tunnel",
+    "info": {
+      "description": "Tunnel mitt i skogen bland gröna träd. Magiskt ljus som fångar ett ögonblick där fantasin har inga gränser!",
+      "price": 75,
+      "size": 80,
+      "size1": 95
+    },
+    "class": "popup-img",
+    "url": "https://images.unsplash.com/photo-1635256143160-35fcb1bfccb2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=421&q=80",
+    "alt": "Skogstunnel bland gröna träd",
+    "id": "prodR",
+    "inCart": 0
+  },
+  {
+    "title": "Halvmåne en stjärnklar natt",
+    "info": {
+      "description": "Halvmåne bild med stjärnklar himmel som bakgrund. Minimalisk och stilren som visar det majestätiska med månen. Perfekt på de vita väggarna eller som en färgblock i ditt hem!",
+      "price": 155,
+      "size": 100,
+      "size1": 120
+    },
+    "class": "popup-img",
+    "url": "https://images.unsplash.com/photo-1634242083752-323b6155c365?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
+    "alt": "Halv måne i stjärnklar natt",
+    "id": "prodS",
+    "inCart": 0
+  },
+  {
+    "title": "St. Basil's Katedral i Moskva",
+    "info": {
+      "description": "St. Basil's Katedral i Moskva. Denna vackra gamla kyrka som befinner sig i Ryssland tar dig tillbaka när kyrkan var i sina glansdagar. Fotograferad och redigerad för att få fram kyrkans alla vackra detaljer till fullt!",
+      "price": 175,
+      "size": 155,
+      "size1": 120
+    },
+    "class": "popup-img",
+    "url": "https://images.unsplash.com/photo-1634926638859-841e6d65cf68?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
+    "alt": "St. Basil's Katedral Moskva",
+    "id": "prodT",
+    "inCart": 0
+  }
+]

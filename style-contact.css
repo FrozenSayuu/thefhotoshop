@@ -1,0 +1,105 @@
+/* Kontakt sida */
+
+body {
+  background: linear-gradient(#4463456c, #fbfbc7);
+}
+.flex__btn__contact {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 20px;
+}
+.contact-header {
+  /* background-color: #4463456c; */
+  /* box-shadow: 0px 4px 5px 3px rgb(0 0 0 / 29%); */
+  height: 2em;
+  margin: auto;
+  font-size: 2em;
+}
+a {
+  font-size: 1.5em;
+}
+main {
+  padding-left: 1em;
+}
+
+#contact-desc {
+  padding-top: 1em;
+  font-size: 1.5em;
+}
+
+#contact-desc p {
+  padding-top: 10px;
+}
+.contact-wrapper {
+  height: 77vh;
+}
+
+.contact-form {
+  border: 1px solid grey;
+  width: 30em;
+  margin-top: 20px;
+  background-color: #ffecb3;
+  padding: 30px;
+}
+
+#contact-form-cont {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  font-size: 1.2em;
+}
+
+.contact-form-label {
+  margin: 0;
+  padding: 0;
+  font-size: 1.2em;
+}
+
+.message {
+  padding-top: 2em;
+}
+
+footer {
+  margin-top: 3em;
+  padding: 10px;
+  background: linear-gradient(#fbfbc7, #4463456c);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  background: none;
+}
+
+#footer-link {
+  display: flex;
+  flex-direction: column;
+}
+.messageDiv {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  background-color: #ffffe5;
+  height: 30%;
+  border-radius: 5px;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  line-height: 1.6;
+  text-align: center;
+  font-size: 30px;
+  padding-top: 2em;
+}
+#closeMsgDiv {
+  width: 50px;
+  height: 50px;
+  font-size: 50px;
+  background: none;
+  outline: none;
+  border: none;
+  margin-top: 1em;
+  cursor: pointer;
+}

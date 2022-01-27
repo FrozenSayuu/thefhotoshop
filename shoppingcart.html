@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Varukorg</title>
+    <link href=style-shoppingcart.css rel="stylesheet">
+    <link href=style.css rel="stylesheet">
+</head>
+
+<body>
+    <div class="flex__btn_shopping">
+        <div>
+            <a id="link" href="index.html">Hem</a>
+        </div>
+        <div>
+            <a id="link" href="contact.html">Kontakt</a>
+        </div>
+    </div>
+
+    <div class="contact-header">
+        <h2>Din varukorg</h2>
+    </div>
+
+    <div class="shop-wrapper">
+        <main class="shop-container">
+
+            <div class="shop-container">
+                <div class="product-header">
+                    <h3 class="product-title">Produkt</h3>
+                    <h3 class="price">Pris</h3>
+                    <h3 class="quantity">Antal</h3>
+                    <h3 class="total">Total</h3>
+                </div>
+                <div class="cart-products"></div>
+            </div>
+            <div class='details'>
+                <div>
+                    <h3 class="shop-total">Summa</h3>
+                </div>
+                <div class="cart-in-total"></div>
+            </div>
+
+            <hr>
+            <article class="shop-form-container">
+                <h2>Adress</h2>
+                <form class="shop-form">
+                    <label class="shop-form-label">Förnamn:
+                        <div>
+                            <input class="shop-form-input" type="text" name="fname" required />
+                        </div>
+                    </label>
+                    <label class="shop-form-label">Efternamn:
+                        <div>
+                            <input class="shop-form-input" type="text" name="lname" required />
+                        </div>
+                    </label><br>
+                    <label class="shop-form-label">Adress:
+                        <div>
+                            <input class="shop-form-input" type="text" name="adresse" required />
+                        </div>
+                    </label><br>
+                    <label class="shop-form-label">Postnr:
+                        <div>
+                            <input class="shop-form-input" type="text" name="postalcode" required />
+                        </div>
+                    </label>
+                    <label class="shop-form-label">Stad:
+                        <div>
+                            <input class="shop-form-input" type="text" name="city" required />
+                        </div>
+                    </label><br>
+                    <label class="shop-form-label">E-post:
+                        <div>
+                            <input class="shop-form-input" type="email" name="email" required />
+                        </div>
+                    </label>
+                    <label class="shop-form-label">Telefon nr:
+                        <div>
+                            <input class="shop-form-input" type="tel" name="phone" required />
+                        </div>
+                    </label>
+                    <div class="shop-form-message">Välj betalalternativ:<br>
+                        <div>
+                            <label class="shop-pay">Kortbetalning - Mastercard/Visa:
+                                <input type="radio" name="payment" checked />
+                            </label>
+                            <label class="shop-pay">Klarna:
+                                <input type="radio" name="payment" />
+                            </label>
+                            <label class="shop-pay">Swish:
+                                <input type="radio" name="payment" />
+                            </label>
+                        </div>
+                    </div>
+                </form>
+            </article>
+            <hr>
+            <div class="shop-order">
+                <button class="shop-order-button">Beställ och fortsätt</button>
+            </div>
+        </main>
+    </div>
+
+    <footer class='shop_footer'>
+        <p>@Anno 2021</p>
+        <div id="footer-desc">
+            <p>Fhoto Shop AB</p>
+            <p>Bildgatan 1</p>
+            <p>212 22 Malmö</p>
+            <p>Tel: 070 111 22 33</p>
+            <p>Mail: <a href="#">info@fhotoshop.com</a></p>
+        </div>
+        <div id="footer-link">
+            <a id="link" href="contact.html">Hem</a>
+            <a id="link" href="index.html">Kontakt</a>
+        </div>
+        <div class="overlay hidden"></div>
+    </footer>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script>
+        const clearButton = document.createElement('button');
+        clearButton.classList = 'clear'
+        clearButton.innerHTML = 'Rensa Varukorgen';
+        const KEYCODE = {
+            ESC: 27
+        };
+
+        document.querySelector('.details').appendChild(clearButton)
+        window.onload = function () {
+            function displayCart() {
+
+                let cartItems = JSON.parse(localStorage.getItem("products"));
+                let cartContainer = document.querySelector(".cart-products");
+                let cartInTotal = document.querySelector(".cart-in-total");
+                let productDiv = document.querySelector(".flex-product-in-cart")
+                let totalCost = 0;
+
+
+                cartInTotal.innerHTML = '';
+
+                if (cartItems) {
+                    cartItems.map(product => {
+                        totalCost += product.price;
+                    })
+                    // console.log(totalCost);
+                    let inCart = [];
+                    cartItems.map(item => {
+                        if (inCart.find(object => {
+                                if (object.title === item.title) {
+                                    object.times++;
+                                    return true;
+
+                                } else {
+                                    return false;
+                                }
+                            })) {} else {
+                            item.times = 1;
+                            inCart.push(item);
+                        }
+                    })
+                    // console.log('inCart', inCart);
+
+
+                    // console.log(cartItems);
+                    if (cartItems && cartContainer) {
+                        cartContainer.innerHTML = '';
+
+                        inCart.map((item) => {
+                            cartContainer.innerHTML +=
+                                `<div class='flex-product-in-cart'>
+                                 <div class="product-title">${item.title}</div>
+                                 <div class="price">${item.price},00 kr</div>
+                                 <div class="quantity">
+                                 <ion-icon class='minus' name="remove-circle-outline" name="minus"></ion-icon>
+                                 <span>${item.times}</span>
+                                 <ion-icon name="add-circle-outline" name="plus"></ion-icon>
+                                 </div>
+                                 <div class="total">${item.times * item.price},00 kr </div><span id=${item.id} class='trash'>&#128465;</span></div>`;
+                        });
+
+                        cartInTotal.innerHTML += `<h3 class="shop-total">${totalCost},00 kr</h3>`
+
+                    }
+                    document.querySelector('.clear').addEventListener('click', () => removeAll())
+
+                    const minus = document.querySelectorAll('.minus')
+                    minus.forEach(minusIcon => {
+                        minusIcon.addEventListener('click', (e) => removeOne(e.target
+                            .parentElement.parentNode.children[4].id))
+                    });
+                } else if (cartItems === null) {
+                    cartContainer.innerHTML = '';
+                }
+
+                const trash = document.querySelectorAll('.trash')
+                trash.forEach(can => {
+                    can.addEventListener('click', (e) => removeProd(e.target.parentElement.children[0]
+                        .innerText))
+                })
+
+
+                function removeProd(title) {
+                    console.log('removeProd', title);
+                    let cartItems = JSON.parse(localStorage.getItem("products"));
+                    const newCartItems = cartItems.filter(item => item.title != title)
+                    console.log(newCartItems);
+                    localStorage.setItem('products', JSON.stringify(newCartItems))
+                    displayCart()
+                }
+
+                function removeAll() {
+                    console.log('clickremoveAll');
+                    localStorage.removeItem("products");
+                    displayCart();
+                }
+
+                function removeOne(id) {
+                    console.log('removeOne');
+                    let cartItems = JSON.parse(localStorage.getItem("products"));
+                    const newCartItems = cartItems.filter(item => item.id != id)
+                    localStorage.setItem('products', JSON.stringify(newCartItems))
+                    displayCart()
+                }
+            }
+            displayCart();
+
+            const orderDiv = document.createElement('div')
+            document.querySelector('.shop-order-button').addEventListener("click", () => {
+                // console.log('.shop-order-button');
+
+                orderDiv.innerHTML = '';
+                orderDiv.insertAdjacentHTML('afterbegin',
+                    `<h2>Beställningen har registrerats. Tack för ditt köp</h2><button id='closeBtnOrder' class='close'>&times;</button>`
+                );
+                // document.querySelector('.orderDiv').appendChild(closeOrderButton)
+
+                orderDiv.classList = 'orderDiv'
+                document.querySelector('.overlay').classList.remove('hidden')
+
+                document.querySelector('.shop-wrapper').appendChild(orderDiv)
+                document.querySelector('.shop-order-button').disabled = true
+                const overlay = document.querySelector('.overlay');
+                document.querySelector('#closeBtnOrder').addEventListener('click', function (e) {
+                    if (!orderDiv.classList.contains('hidden')) {
+                        orderDiv.classList.add('hidden');
+                        overlay.classList.add('hidden');
+                        document.querySelector('.shop-order-button').disabled = false
+                    }
+                });
+            })
+            document.addEventListener("keydown", checkCloseDialog)
+
+            function checkCloseDialog(press) {
+                if (press.keyCode === KEYCODE.ESC) closeCartPopup();
+            }
+
+            function closeCartPopup() {
+                if (!orderDiv.classList.contains('hidden')) {
+                    orderDiv.classList.add('hidden');
+                    document.querySelector('.overlay').classList.add('hidden');
+                    document.querySelector('.shop-order-button').disabled = false
+                }
+            }
+
+        }
+    </script>
+</body>
+
+</html>

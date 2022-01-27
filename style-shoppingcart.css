@@ -1,0 +1,213 @@
+body {
+  background: linear-gradient(#4463456c, #fbfbc7);
+}
+.flex__btn_shopping {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 20px;
+}
+.shop-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+a {
+  margin-left: 1em;
+  font-size: 1.5em;
+}
+article {
+  align-items: center;
+}
+
+h2 {
+  margin-top: 50px;
+  background: none;
+}
+
+hr {
+  width: 100%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.shop-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 650px;
+  justify-content: space-around;
+  margin-top: 50px;
+  margin: 0 auto;
+  margin: 50px;
+}
+
+.shop-container ion-icon {
+  font-size: 25px;
+  color: green;
+  margin-left: 10px;
+  margin-right: 10px;
+  cursor: pointer;
+  text-align: center;
+}
+.flex-product-in-cart {
+  display: flex;
+}
+.clear {
+  width: 100px;
+  height: 40px;
+  cursor: pointer;
+  font-size: 0.8em;
+  text-align: center;
+  position: absolute;
+  top: 200px;
+  right: 70px;
+}
+.trash {
+  font-size: 30px;
+  cursor: pointer;
+}
+.product-header {
+  width: 100%;
+  /*max-width: 560px;*/
+  display: flex;
+  justify-content: flex-start;
+  border-bottom: 4px solid lightgrey;
+  margin: 0 auto;
+}
+
+.product-title {
+  width: 30%;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.price {
+  width: 30%;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.quantity {
+  width: 14%;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.total {
+  width: 30%;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.cart-products {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 0 auto;
+}
+
+.shop-total {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 50px;
+}
+
+.shop-list-prod {
+  display: flex;
+  align-items: center;
+}
+
+.shop-list-prod div {
+  margin-left: 50px;
+}
+
+.shop-pay {
+  margin: 50px;
+}
+
+.shop-form {
+  align-items: center;
+  padding: 20px;
+  margin: 10px;
+}
+
+.shop-form-message {
+  margin-top: 50px;
+  margin-left: 50px;
+}
+
+.shop-form-message div {
+  display: flex;
+  justify-content: center;
+}
+
+.shop-form-label {
+  display: inline-block;
+  margin: 20px;
+}
+
+.shop-order {
+  margin-top: 50px;
+  margin-left: 50px;
+}
+
+button {
+  padding: 10px;
+  border-radius: 15px;
+  background-color: white;
+  border: 1px solid black;
+  font-size: 16px;
+}
+
+@media screen and (max-width: 640px) {
+  .shop-list-amount button {
+    display: none;
+  }
+  .shop-form {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+.orderDiv {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  background-color: #ffffe5;
+  height: 30%;
+  border-radius: 5px;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  line-height: 1.6;
+  text-align: center;
+  font-size: 30px;
+  padding-top: 2em;
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+  z-index: 20;
+}
+#closeBtnOrder {
+  background: none;
+  border: none;
+  outline: none;
+  font-size: 2em;
+  cursor: pointer;
+}
+.shop_footer {
+  background: none;
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="style-contact.css">
+    <script src="submit.js" defer></script>
+    <title>Kontakt</title>
+</head>
+
+<body>
+    <div class="flex__btn__contact">
+        <button class="btn__cart"><svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 24 24">
+                <a href="shoppingcart.html">
+                    <path
+                        d="M10 19.5c0 .829-.672 1.5-1.5 1.5s-1.5-.671-1.5-1.5c0-.828.672-1.5 1.5-1.5s1.5.672 1.5 1.5zm3.5-1.5c-.828 0-1.5.671-1.5 1.5s.672 1.5 1.5 1.5 1.5-.671 1.5-1.5c0-.828-.672-1.5-1.5-1.5zm1.336-5l1.977-7h-16.813l2.938 7h11.898zm4.969-10l-3.432 12h-12.597l.839 2h13.239l3.474-12h1.929l.743-2h-4.195z" />
+            </svg>
+            </a>
+        </button>
+        <a id="link" href="index.html">Hem</a>
+    </div>
+
+    <div class="contact-header">
+        <h2>Kontakta oss</h2>
+    </div>
+
+    <main class='contact-wrapper'>
+        <div id="contact-desc">
+            <p>Välkommen att kontakta oss via mail eller telefon eller fyll i kontaktformuläret.</p>
+            <p>Fhoto Shop AB</p>
+            <p>Bildgatan 1</p>
+            <p>212 22 Malmö</p>
+            <p>Tel: 070 111 22 33</p>
+            <p>Mail: <a href="#">info@fhotoshop.com</a></p>
+        </div>
+
+        <div class="contact-form">
+            <div id="contact-form-cont">
+                <form id="contact-form">
+                    <label class="contact-form-label">Namn:
+                        <input id="myinput" type="text" name="name" placeholder="För- och Efternamn" />
+                    </label><br>
+                    <label class="contact-form-label">E-post:
+                        <input id="myinput" type="email" name="email" placeholder="E-post" required />
+                    </label><br>
+                    <label class="contact-form-label">Tel.nr:
+                        <input id="myinput" type="phone" name="tel" placeholder="+46 123 456 789" />
+                    </label><br>
+
+                    <div class="message">Meddelande:<br>
+                        <textarea name="description" placeholder="Ditt meddelande"></textarea>
+                    </div>
+                    <button id="submitBtn" type="submit">Skicka</button>
+                    <button type="reset">Rensa</button>
+                </form>
+            </div>
+        </div>
+
+    </main>
+    <footer>
+        <p>@Anno 2021</p>
+        <div id="footer-desc">
+            <p>Fhoto Shop AB</p>
+            <p>Bildgatan 1</p>
+            <p>212 22 Malmö</p>
+            <p>Tel: 070 111 22 33</p>
+            <p>Mail: <a href="#">info@fhotoshop.com</a></p>
+        </div>
+        <div id="footer-link">
+            <a id="link" href="contact.html">Hem</a>
+            <a id="link" href="index.html">Kontakt</a>
+        </div>
+    </footer>
+    <div class="overlay hidden"></div>
+</body>
+
+</html>

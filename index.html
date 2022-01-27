@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <title>Shop</title>
+</head>
+
+<body>
+    <div class="flex__btn">
+        <button class="btn__cart"><a href="shoppingcart.html"><svg xmlns="http://www.w3.org/2000/svg" width="45"
+                    height="45" viewBox="0 0 24 24">
+
+                    <path
+                        d="M10 19.5c0 .829-.672 1.5-1.5 1.5s-1.5-.671-1.5-1.5c0-.828.672-1.5 1.5-1.5s1.5.672 1.5 1.5zm3.5-1.5c-.828 0-1.5.671-1.5 1.5s.672 1.5 1.5 1.5 1.5-.671 1.5-1.5c0-.828-.672-1.5-1.5-1.5zm1.336-5l1.977-7h-16.813l2.938 7h11.898zm4.969-10l-3.432 12h-12.597l.839 2h13.239l3.474-12h1.929l.743-2h-4.195z" />
+                </svg>
+                <span class='cartCount'>0</span>
+            </a>
+        </button>
+        <a id="contact" href="contact.html">Kontakt</a>
+    </div>
+    <header class="flex__box">
+        <div class="flex__title">
+            <h1><span>T</span>he<span>F</span>hoto<span>S</span>hop</h1>
+        </div>
+
+        <h3>~Allt för dina väggar i alla stilar och typer~</h3>
+
+        <!-- <div class="flex__search"> -->
+
+        <div id='searchBox'>
+            <input id="inputSearch" type='text' value='' required>
+            <span class="caret"></span>
+        </div>
+        </button>
+        <!-- </div> -->
+    </header>
+
+    <h2 class='product__headline'>Våra Produkter</h2>
+    </div>
+    <main class="flex__products">
+
+
+        <select name="Categorys" id="category__sort">
+
+            <option id="sort__option " value="first">--Välj--</option>
+
+            <option id="sort__option " value="price">Pris</option>
+
+            <option id="sort__option " value="size">Storlek</option>
+
+        </select></main>
+
+    </div>
+    <footer>
+        <p>@Anno 2021</p>
+        <div id="footer-desc">
+            <p>Fhoto Shop AB</p>
+            <p>Bildgatan 1</p>
+            <p>212 22 Malmö</p>
+            <p>Tel: 070 111 22 33</p>
+            <p>Mail: <a href="#">info@fhotoshop.com</a></p>
+        </div>
+        <div id="footer-link">
+            <a id="link" href="contact.html">Hem</a>
+            <a id="link" href="index.html">Kontakt</a>
+        </div>
+    </footer>
+    <div class="show-product-window"></div>
+    <div class="popup-product-window hidden">
+    </div>
+    <div class="overlay hidden"></div>
+    <script src="script.js" defer></script>
+</body>
+
+</html>
